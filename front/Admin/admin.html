@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Painel do Administrador</title>
+    <link rel="stylesheet" href="admin.css"/>
+</head>
+<body>
+<div class="container">
+    <form id="adminForm">
+        <h2>Selecione a área para enviar o email:</h2>
+        <select id="area" required>
+
+        </select>
+
+        <h2>Informe a data e hora do email:</h2>
+        <div class="datetime-group">
+            <select id="ano" required>
+                <option value="">Ano</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
+            <select id="mes" required>
+                <option value="">Mês</option>
+                <option value="01">Janeiro</option>
+                <option value="02">Fevereiro</option>
+                <option value="03">Março</option>
+                <option value="04">Abril</option>
+                <option value="05">Maio</option>
+                <option value="06">Junho</option>
+                <option value="07">Julho</option>
+                <option value="08">Agosto</option>
+                <option value="09">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+            <select id="dia" required>
+                <option value="">Dia</option>
+                <!-- Preenchido via JS -->
+            </select>
+            <select id="hora" required>
+                <option value="">Hora</option>
+                <!-- Preenchido via JS -->
+            </select>
+        </div>
+
+        <h2>Selecione o tipo de email que deseja enviar:</h2>
+        <div class="email-tipo">
+            <label><input type="radio" name="tipoEmail" value="seco" required> Recolhimento de lixo seco</label>
+            <label><input type="radio" name="tipoEmail" value="organico"> Recolhimento de lixo orgânico</label>
+            <label><input type="radio" name="tipoEmail" value="outro"> Outro</label>
+        </div>
+
+        <div id="outroCampo" class="hidden">
+            <label for="mensagemOutro">Informe o conteúdo do email:</label>
+            <textarea id="mensagemOutro" placeholder="Digite a mensagem aqui..."></textarea>
+        </div>
+
+        <div class="botoes">
+            <button type="reset" class="cancelar">Cancelar</button>
+            <button type="submit" class="enviar">Enviar</button>
+        </div>
+    </form>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
