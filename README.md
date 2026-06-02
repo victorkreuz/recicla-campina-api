@@ -12,6 +12,7 @@ Esse projeto nasceu como um exercício técnico, mas eu revisitei a base para de
 - Lista os moradores cadastrados.
 - Permite criar um roteiro de coleta por área, data, horário e tipo de resíduo.
 - Envia alertas por email para os usuários encontrados naquela região.
+- Usa SMTP com credenciais configuradas por variáveis de ambiente.
 - Valida os dados recebidos pela API antes de salvar ou processar.
 - Retorna mensagens de erro em um formato mais organizado.
 - Possui testes automatizados para os principais fluxos da API.
@@ -41,6 +42,10 @@ Esse projeto nasceu como um exercício técnico, mas eu revisitei a base para de
 ### Criação de roteiro
 
 ![Criação de roteiro sem destinatários](docs/images/05-post-roteiro-sem-destinatarios.png)
+
+### Email de alerta recebido
+
+![Email de alerta recebido](docs/images/11-email-alerta-recebido.jpeg)
 
 ### Validação de roteiro
 
